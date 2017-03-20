@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { Page1 } from '../page1/page1';
 /*
   Generated class for the MyLogin page.
 
@@ -13,7 +13,12 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class MyLoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  pushPage(){
+  	this.navCtrl.setRoot(Page1);
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MyLoginPage');
