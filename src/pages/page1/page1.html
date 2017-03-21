@@ -9,7 +9,7 @@
 
 <ion-content>
   <br>
-  <ion-searchbar></ion-searchbar>
+  <ion-searchbar placeholder="search for videos"></ion-searchbar>
   <ion-card>
   <iframe class="iframesize" src="https://youtube.com/embed/ilM8YorL_jI" frameborder="0" allowfullscreen>
         </iframe>
@@ -31,7 +31,7 @@
         </iframe>
   <ion-item>
     <span item-left>Tutorial 1 - Introduction to Finance</span>
-    <button ion-button icon-left clear item-right>
+    <button ion-button icon-left clear item-right (click)="openMenu()">
       <ion-icon name="more"></ion-icon>
     </button>
   </ion-item>
